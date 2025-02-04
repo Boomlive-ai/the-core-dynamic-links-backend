@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port (make sure this matches Coolify's setting)
-EXPOSE 3001
+EXPOSE 3000
 
 # Start the application using npm
 CMD ["npm", "start"]
