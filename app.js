@@ -45,7 +45,8 @@ app.get('/user-agent', (req, res) => {
 
 
 // Dynamic Link for The core
-app.get('/fetch-links/:id', fetchLinks);
+// app.get('/fetch-links/:id', fetchLinks);
+app.get('/:id', fetchLinks);
 
 // A fallback route to handle any other GET requests
 app.get('*', (req, res) => {
